@@ -138,9 +138,10 @@ main {
     box-shadow: 2px 2px 5px var(--gray);
 }
 
-#video {
+#meu_video {
     margin-bottom: 2rem;
 }
+
 
 .video {
     width: 60vw;
@@ -197,7 +198,10 @@ footer {
 }
 
 .formulario {
-    width: 50%;
+    width: 100%;
+    
+    
+
 }
 
 label {
