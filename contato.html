@@ -31,10 +31,10 @@
     </nav>
 
     <!-- Conteúdo da pagina-->
-    <main class="contato">
-        <section class="formulario">
-            <form>    
-            <h3>Contato</h3>
+    <main id="contato">
+        <section id="formulario">
+            <form>
+                <h3>Contato</h3>
                 <div class="campos-form">
                     <label for="nome">Nome:</label>
                     <input onkeyup="validarNome()" id="nome" type="text" name="nome" placeholder="Insira o seu nome completo">
@@ -42,33 +42,33 @@
                 </div>
                 <div class="campos-form">
                     <label for="email">E-mail:</label>
-                    <input onkeyup="validarEmail2()" id="email" name="email" type="text" placeholder="Insira o seu E-mail">
+                    <input onkeyup="validarEmailRegEx()" id="email" name="email" type="text" placeholder="Insira seu E-mail">
                     <div id="txtEmail"></div>
                 </div>
                 <div class="campos-form">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea onkeyup="validarMensagem()" id="mensagem" name="mensagem" rows="8" placeholder="Deixe sua mensagem..."></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="8" placeholder="Deixe sua mensagem..."></textarea>
                     <div id="txtMensagem"></div>
                 </div>
-                <button type="button">Enviar</button>
-            </form>    
-                
-                <form>
-                <h3>Buscar CEP</h3>
-                <div class="endereco">
-                <div class="campos-form">    
-                <label for="cep">CEP:</label>
-                    <input onkeyup="validarCep()" id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
+                <button onclick="enviarFormulario()" type="button">Enviar</button>
+            </form>
+        </section>
+        <section id="formulario_buscacep">
+            <h3>Buscar CEP</h3>
+            <div class="endereco">
+                <div class="campos-form">
+                    <label for="cep">CEP:</label>
+                    <input id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
                     <div id="txtCep"></div>
                 </div>
-                <button type="button">Consultar</button>
+                <button onclick="consultarCep()" type="button">Consultar</button>
                 <hr>
                 <div class="campos-form">
                     <label for="dados">Endereço:</label>
                     <textarea id="dados" name="dados" type="text" rows="8" placeholder="Busca CEP"></textarea>
                     <div id="txtEndereco"></div>
-            </form>
-
+                </div>
+            </div>
         </section>
     </main>
 
@@ -89,6 +89,7 @@
         </div>
         <p class="by">Desenvolvido por: Stephany Camily - 2023 &copy;</p>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

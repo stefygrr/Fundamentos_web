@@ -18,11 +18,14 @@
 
 body {
     background-color: var(--background-page);
+    font-family: var(--lato-cursiva);
+    color: var(--cor-fonte-padrao);
 }
 
 p {
     font-family: 'lato', Roboto;
     margin-bottom: 1.5rem;
+    font-size: 1.10rem;
 }
 
 h1,
@@ -49,6 +52,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
@@ -161,7 +165,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--black)
 }
 
 .redes_sociais {
@@ -184,7 +188,8 @@ footer {
 
 /*Página de Contato*/
 
-.contato {
+#contato {
+    width: 80vw;
     display: flex;
     gap: 3rem;
     justify-content: center;
@@ -198,10 +203,7 @@ footer {
 }
 
 .formulario {
-    width: 100%;
-    
-    
-
+    width: 60vw;
 }
 
 label {
